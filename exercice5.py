@@ -10,14 +10,14 @@ autant de fois qu’il y a de coupures de chaque sorte à rendre.
 prixArticle=1
 sommeDue=0
 while prixArticle !=0:
-    prixArticle = int(input("enter le montant de l'article: \t"))
+    prixArticle = int(input("\nenter le montant de l'article: \t"))
     sommeDue += prixArticle
     break
-print("Vous devez :\t", sommeDue," euros.")
-montantVersé =int(input("entez  montant versé"))
+print("\nVous devez :\t", sommeDue," euros.")
+montantVersé =int(input("\nentez  montant versé:\t"))
 Reste = montantVersé - sommeDue
 Nmb10E =0
-print(Reste)
+
 while Reste >=10:
     Nmb10E +=1
     Reste -=10
@@ -26,8 +26,10 @@ Nmb5E =0
 if Reste >=5:
     Nmb5E =1 
     Reste -= 5
-    print(Reste)
+    print("reste monnaire:\t",Reste)
+print("--------------------------\n") 
 print("Rendu de la monnaie :\n") 
 print("Billets de 10 Euros : ", Nmb10E, "\n") 
 print("Billets de 5 Euros : ", Nmb5E, "\n") 
 print("Pièces de 1 Euros : ", Reste, "\n") 
+print("--------------------------\n") 
